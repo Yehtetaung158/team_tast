@@ -2,18 +2,22 @@ const flowbite = require("flowbite-react/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    flowbite.content(),
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
+    fontFamily: {
+      sans: ["Montserrat", "sans-serif"],
+    },
     extend: {
+      fontFamily: {
+        header: ["Bitter", "serif"],
+        miniHeader: ["Comic Neue", "cursive"],
+      },
       colors: {
-        header : '#2E3646',
-        subHeader:"#5F6D7E",
-        HLHeader:"#79CA04",
-        paragraph:"#5F6D7E",
+        header: "#2E3646",
+        subHeader: "#5F6D7E",
+        HLHeader: "#79CA04",
+        paragraph: "#5F6D7E",
+        navbarTextActive: "#494B46",
         lightGreen: {
           10: "#fafdf5", // 10% opacity shade
           20: "#f6fbee", // 20% opacity shade
@@ -55,7 +59,5 @@ export default {
       },
     },
   },
-  plugins: [
-    flowbite.plugin(),
-  ],
+  plugins: [flowbite.plugin()],
 };
