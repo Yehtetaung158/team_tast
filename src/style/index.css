@@ -16,3 +16,9 @@
   font-weight: 700;
 }
 
+.active{
+  /* text-decoration: underline; */
+  color: #494B46;
+  font-weight: bold;
+}
+
