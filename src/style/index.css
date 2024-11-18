@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-  /* text-decoration: underline; */
-  color: #494B46;
-  font-weight: bold;
+.homebg {
+  background: rgb(255,239,151);
+  background: linear-gradient(90deg, rgba(255,239,151,0.46271008403361347) 11%, rgba(249,251,248,1) 32%, rgba(249,251,248,1) 67%, rgba(255,239,151,0.4318977591036415) 90%);
 }
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
