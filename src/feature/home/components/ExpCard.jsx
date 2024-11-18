@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ExpCard = ({ user: { img, title, content,href }}) => {
   return (
-    <div className='bg-[#f9fbf8b2] border border-[#d1d9e2] px-[32px] py-[24px] rounded-[5px] space-y-[15px] shadow-lg max-lg:m-5'>
+    <div className='bg-[#f9fbf8b2] border border-[#d1d9e2] px-[32px] py-[24px] rounded-[5px] space-y-[15px] shadow-lg max-lg:m-5 hover:-translate-y-3 hover:rotate-3 hover:scale-125 transition-all ease-in-out duration-100 delay-75'>
         <div className='flex justify-between items-center'>
             <div>
                 <img src={img} alt="" />
