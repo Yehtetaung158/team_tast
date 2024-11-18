@@ -57,6 +57,11 @@ export default {
           100: "#090b0e", // 100% opacity shade (darkest)
         },
       },
+      fontSize: {
+        fontHeader: '64px',
+        fontMiniHeader: '22px',
+        fontParagraph: '20px',
+      },
     },
   },
   plugins: [flowbite.plugin()],
