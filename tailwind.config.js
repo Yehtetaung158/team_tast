@@ -21,6 +21,7 @@ export default {
         lableColor: "#04D53F",
         lableFontColor: "#FAFAFA",
         cardHeaderColor: "#5F6D7E",
+        cardBgColor: "#D1D9E2",
         lightGreen: {
           10: "#fafdf5", // 10% opacity shade
           20: "#f6fbee", // 20% opacity shade
