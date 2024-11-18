@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className=" w-full flex flex-col homebg text-center p-2 ">
-      <div className="w-1/2  mx-auto py-[80px] space-y-[24px] ">
+      <div className="lg:w-1/2  mx-auto py-[80px] space-y-[24px] ">
         <div className="font-miniHeader text-paragraph">
           <h5>The Art of UI Design</h5>
         </div>
