@@ -36,7 +36,7 @@ const ExpSection = () => {
         <div>
           <button
             type="button"
-            className="text-paragraphColor hover:text-white border border-HLHeaderColor hover:bg-HLHeaderColorfocus:ring-4 focus:outline-none focus:ring-HLHeaderColor font-medium rounded-[20px] text-sm px-5 py-2.5 text-center me-2 mb-2 "
+            className="text-paragraphColor hover:text-white border border-HLHeaderColor hover:bg-HLHeaderColor focus:ring-4 focus:outline-none focus:ring-HLHeaderColor font-medium rounded-[20px] text-sm px-5 py-2.5 text-center me-2 mb-2 "
           >
             The Best UI
           </button>

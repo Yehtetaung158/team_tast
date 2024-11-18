@@ -32,7 +32,7 @@ const HeroSection = () => {
           </button>
           <button
             type="button"
-            className="focus:outline-none text-white bg-HLHeaderColor hover:text-paragraph hover:bg-white border hover:border-HLHeaderColor font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-150"
+            className="focus:outline-none text-white bg-HLHeaderColor hover:text-paragraphColor hover:bg-white border hover:border-HLHeaderColor font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-150"
           >
             Get Started <MoveRight className="size-5 inline-flex ml-2" />
           </button>
