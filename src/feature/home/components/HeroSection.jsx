@@ -6,19 +6,19 @@ import { MoveRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className=" w-full flex flex-col homebg text-center p-5 relative ">
-      <div className="lg:w-1/2  mx-auto py-[80px] space-y-[24px] ">
-        <div className="font-miniHeader_style text-paragraph">
+      <div className="lg:w-1/2  mx-auto py-[80px] space-y-[50px]   ">
+        <div className="font-miniHeader_style text-sm md:text-fontSizeMiniHeader text-paragraph">
           <h5>The Art of UI Design</h5>
         </div>
-        <div className=" bitter text-[40px] lg:text-[60px]">
-          <h1>
-            Come for the features of it. Stay for
-            <span className=" text-HLHeader "> best ever </span>
+        <div className=" bitter max-md:text-2xl max-lg:text-3xl lg:text-fontSizeHeader  ">
+          <h1 className="lg:text-nowrap lg:leading-[70px]">
+            Come for the features of it.<br/> Stay for
+            <span className=" text-HLHeaderColor "> best ever </span>
             help.
           </h1>
         </div>
 
-        <div className=" text-center text-sm lg:text-md text-paragraph px-16 ">
+        <div className=" text-center text-sm lg:text-fontSizeParagraph text-paragraph px-16 ">
           <p>
             We’ve been told it is possible to revolutionize the payment
             industry. We have not reinvented the wheel, we decide
