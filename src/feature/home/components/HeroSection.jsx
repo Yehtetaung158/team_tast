@@ -1,5 +1,6 @@
 import React from "react";
 import img1 from "../../../assets/HomeIMG/heroIMG.png";
+import img2 from "../../../assets/HomeIMG/kite.png"
 import { MoveRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -40,6 +41,9 @@ const HeroSection = () => {
         <div className="mx-auto ">
           <img src={img1}></img>
         </div>
+      </div>
+      <div className="inline-flex justify-end max-md:hidden lg:-translate-y-[600px] lg:-translate-x-40">
+        <img src={img2} alt="" />
       </div>
     </div>
   );
