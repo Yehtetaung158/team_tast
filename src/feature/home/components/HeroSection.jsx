@@ -26,13 +26,13 @@ const HeroSection = () => {
           <button
 
             type="button"
-            class="text-paragraph hover:text-white border border-HLHeader hover:bg-HLHeader font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2  transition-all duration-150 delay-75"
+            className="text-paragraph hover:text-white border border-HLHeader hover:bg-HLHeader font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2  transition-all duration-150 delay-75"
           >
             Learn More
           </button>
           <button
             type="button"
-            class="focus:outline-none text-white hover:text-paragraph bg-HLHeader hover:bg-white border hover:border-HLHeader  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2  transition-all duration-150 delay-75"
+            className="focus:outline-none text-white hover:text-paragraph bg-HLHeader hover:bg-white border hover:border-HLHeader  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2  transition-all duration-150 delay-75"
           >
             Get Start <MoveRight className="size-5 inline-flex gap-2" />
           </button>

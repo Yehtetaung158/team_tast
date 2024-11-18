@@ -6,7 +6,6 @@ import { BiMenu, BiX } from "react-icons/bi";
 
 const Header = () => {
   const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
-  console.log(isDropDownMenuOpen);
   return (
     <Container>
       <header>
