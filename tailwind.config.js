@@ -57,8 +57,6 @@ export default {
           100: "#090b0e", // 100% opacity shade (darkest)
         },
       },
-     
-      
     },
   },
   plugins: [flowbite.plugin()],
