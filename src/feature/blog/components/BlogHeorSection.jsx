@@ -1,6 +1,7 @@
 import React from 'react'
 import heroSVG from "../../../assets/BlogImg/Lines.svg";
 import { HiArrowRight } from "react-icons/hi";
+import OutLineBtn from './OutLineBtn';
 
 const BlogHeorSection = () => {
   return (
@@ -20,12 +21,10 @@ const BlogHeorSection = () => {
           <img src={heroSVG} alt="" />
         </div>
         <div className=" w-1/2 space-y-2">
-          <button className="px-6 py-2 border-2 border-[#E9F791] font-semibold text-lg rounded-full hover:bg-[#E9F791]  transition-all duration-300 bg-white text-paragraphColor">
-            Our Blog
-          </button>
+          <OutLineBtn text="Our Blog" />
 
           <h1 className="font-header_style font-bold text-fontSizeHeader text-headerColor">
-            Welcome to <span className="text-HLHeaderColor">our blog</span>
+            Welcome to <span className="text-lableColor">our blog</span>
           </h1>
           <p className=" text-fontSizeMiniHeader text-paragraphColor">
             Our blog is your resource for insightful articles, design trends,
