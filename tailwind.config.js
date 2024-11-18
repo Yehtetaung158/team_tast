@@ -9,15 +9,15 @@ export default {
     },
     extend: {
       fontFamily: {
-        header: ["Bitter", "serif"],
-        miniHeader: ["Comic Neue", "cursive"],
+        header_style: ["Bitter", "serif"],
+        miniHeader_style: ["Comic Neue", "cursive"],
       },
       colors: {
-        header: "#2E3646",
-        subHeader: "#5F6D7E",
-        HLHeader: "#79CA04",
-        paragraph: "#5F6D7E",
-        navbarTextActive: "#494B46",
+        headerColor: "#2E3646",
+        subHeaderColor: "#5F6D7E",
+        HLHeaderColor: "#79CA04",
+        paragraphColor: "#5F6D7E",
+        navbarTextActiveColor: "#494B46",
         lightGreen: {
           10: "#fafdf5", // 10% opacity shade
           20: "#f6fbee", // 20% opacity shade
@@ -57,8 +57,11 @@ export default {
           100: "#090b0e", // 100% opacity shade (darkest)
         },
       },
-     
-      
+      fontSize: {
+        fontSizeHeader: '64px',
+        fontSizeMiniHeader: '22px',
+        fontSizeParagraph: '20px',
+      },
     },
   },
   plugins: [flowbite.plugin()],
