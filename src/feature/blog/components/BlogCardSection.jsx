@@ -58,11 +58,11 @@ const BlogCardSection = () => {
       {/* header  */}
       <div className=" flex flex-col items-center">
         <OutLineBtn text="Our Events" />
-        <h1 className=" text-headerColor font-header_style font-bold text-fontSizeHeader">
+        <h1 className=" text-headerColor font-header_style font-bold lg:text-fontSizeHeader text-fontSizeMobileHeader">
           Engagement Initiatives and{" "}
           <span className=" text-HLHeaderColor">Activities</span>
         </h1>
-        <p className=" text-fontSizeParagraph text-paragraphColor">
+        <p className=" lg:text-fontSizeMiniHeader text-fontSizeMobileParagraph text-paragraphColor ">
           Where creativity meets collaboration: Inspiring design through shared
           passion and innovation.
         </p>
@@ -74,7 +74,7 @@ const BlogCardSection = () => {
             className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-span-1 w-full mx-auto"
           >
             <a href="#">
-              <img className="rounded-t-lg" src={card.img} alt />
+              <img className="rounded-t-lg" src={card.img} />
             </a>
             <div className="p-5 space-y-4">
               <div className=" flex gap-3 mb-2">
@@ -90,12 +90,12 @@ const BlogCardSection = () => {
                   {card.title}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-fontSizeParagraph text-paragraphColor">
+              <p className="mb-3 font-normal text-fontSizeMobileParagraph lg:text-fontSizeParagraph text-paragraphColor">
                 {card.description}
               </p>
               <a
                 href="#"
-                className=" text-fontSizeParagraph text-paragraphColor inline-flex gap-3 items-center justify-center hover:text-HLHeaderColor"
+                className=" lg:text-fontSizeParagraph text-fontSizeMobileParagraph  text-paragraphColor inline-flex gap-3 items-center justify-center hover:text-HLHeaderColor"
               >
                 Read more
                 <ArrowRight />
