@@ -1,8 +1,15 @@
 import React from 'react'
+import HeroSection from '../components/HeroSection'
+import ExpSection from '../components/ExpSection'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+        <HeroSection />
+        <ExpSection/>
+
+    </>
+    
   )
 }
 
