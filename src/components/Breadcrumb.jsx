@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BreadCrumb = ({ currentPageTitle }) => {
   return (
-    <div className="w-full flex justify-center mb-5">
+    <div className="w-full flex justify-center">
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-2">
           {/* Home Link */}
