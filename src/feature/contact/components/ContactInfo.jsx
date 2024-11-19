@@ -1,13 +1,15 @@
 import React from "react";
 
-const ContactInfo = ({ icon, text1, text2 }) => {
+const ContactInfo = ({ image, text1, text2 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 w-full h-[300px] sm:w-[250px] lg:w-[300px]">
-      <div className="mb-3">{icon}</div>
-      <h3 className="text-lg font-bold text-center text-grayShades-100 ">
+    <div className="flex flex-col items-center justify-center gap-1 bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 w-full h-[350px] sm:w-[350] lg:w-[400px]">
+      <img src={image} alt="" className="mb-2" />
+      <h3 className="text-fontSizeParagraph font-bold text-center text-grayShades-60">
         {text1}
       </h3>
-      <p className="text-grayShades-50 text-center">{text2}</p>
+      <p className="text-paragraphColor font-paragraph_style text-fontSizeParagraph text-center">
+        {text2}
+      </p>
     </div>
   );
 };
