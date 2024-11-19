@@ -108,7 +108,7 @@ const AboutPage = () => {
                 <p className="text-gray-600">FrontEnd Developer</p>
                 <p className="mt-4 text-gray-900 text-sm">
                   Committed to continuously refining processes to enhance
-                  usability and performance across platforms
+                  usability and performance across platforms.
                 </p>
               </div>
             </div>
