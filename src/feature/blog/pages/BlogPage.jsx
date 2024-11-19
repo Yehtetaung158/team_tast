@@ -1,15 +1,15 @@
 import React from "react";
-import BlogHeorSection from "../components/BlogHeorSection";
 import BlogCardSection from "../components/BlogCardSection";
-import BlogRatinSection from "../components/BlogRatinSection";
 import MailSection from "../components/MailSection";
+import BlogHeroSection from "../components/BlogHeroSection";
+import BlogRatingSection from "../components/BlogRatingSection";
 
 const BlogPage = () => {
   return (
     <>
-      <BlogHeorSection />
+      <BlogHeroSection />
       <BlogCardSection />
-      <BlogRatinSection />
+      <BlogRatingSection/>
       <MailSection/>
     </>
   );
