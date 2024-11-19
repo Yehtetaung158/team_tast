@@ -1,17 +1,30 @@
 import React from "react";
-import Header from "./Header";
-import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import { Outlet, useLocation } from "react-router-dom";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 import Container from "./Container";
+import Footers from "./Footers";
+import Navbar from "./Navbar";
+import ScrollToTopBtn from "./ScrollToTopBtn";
 
 const PageLayoud = () => {
+  const location = useLocation();
+
   return (
-    <main className="flex min-h-screen flex-col ">
-      <Header />
+    <main className="flex min-h-screen flex-col">
       <Container>
-        <Outlet />
+        <Navbar />
+        <SwitchTransition>
+          <CSSTransition
+            timeout={200}
+            key={location.pathname}
+            classNames={"fade"}
+          >
+            <Outlet />
+          </CSSTransition>
+        </SwitchTransition>
+        <ScrollToTopBtn />
+        <Footers />
       </Container>
-      <Footer />
     </main>
   );
 };

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Container from "./Container";
-import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo.jpg";
 import { BiMenu, BiX } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.jpg";
+import Container from "./Container";
 
 const Header = () => {
   const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
-  console.log(isDropDownMenuOpen);
   return (
     <Container>
       <header>
@@ -34,13 +33,11 @@ const Header = () => {
                   aria-expanded="false"
                 >
                   <span className="sr-only">Open main menu</span>
-                  {
-                    isDropDownMenuOpen ? (
-                      <BiX className=" size-8" />
-                    ) : (
-                      <BiMenu className=" size-8" />
-                    )
-                  }
+                  {isDropDownMenuOpen ? (
+                    <BiX className=" size-8" />
+                  ) : (
+                    <BiMenu className=" size-8" />
+                  )}
                 </button>
                 {isDropDownMenuOpen && (
                   <div

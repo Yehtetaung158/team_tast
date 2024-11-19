@@ -10,7 +10,7 @@ const BlogPage = () => {
       <BlogHeroSection />
       <BlogCardSection />
       <BlogRatingSection/>
-      <MailSection/>
+      <MailSection />
     </>
   );
 };
