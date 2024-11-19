@@ -4,7 +4,7 @@ import BreadCrumb from "../../../components/Breadcrumb";
 
 const TitleSection = () => {
   return (
-    <header className="text-center mb-10">
+    <header className="bg-gradient-to-b from-[#d7d5c800] via-[#ddf6c5] to-[#b8c8dc] bg-[length:100%_100%] bg-[position:0px_0px] min-h-[570px] w-full flex flex-col items-center justify-center pb-8">
       <h1 className="text-headerColor font-header_style font-bold text-fontSizeHeader">
         Contact Us
       </h1>
