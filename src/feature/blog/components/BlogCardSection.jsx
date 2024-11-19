@@ -7,6 +7,7 @@ import card4Img from "../../../assets/BlogImg/Wreframeplaceholder.png";
 import card5Img from "../../../assets/BlogImg/Wreframeplaceholder.png";
 import card6Img from "../../../assets/BlogImg/Switch(1).png";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const BlogCardSection = () => {
   const cardsData = [
@@ -54,54 +55,59 @@ const BlogCardSection = () => {
     },
   ];
   return (
-    <section className=" my-8 flex flex-col gap-4">
+    <section className="my-8 flex flex-col gap-4">
       {/* header  */}
-      <div className=" flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <OutLineBtn text="Our Events" />
-        <h1 className=" text-headerColor font-header_style font-bold text-fontSizeHeader">
+        <h1 className="font-header_style text-fontSizeMobileHeader font-bold text-headerColor lg:text-fontSizeHeader">
           Engagement Initiatives and{" "}
-          <span className=" text-HLHeaderColor">Activities</span>
+          <span className="text-HLHeaderColor">Activities</span>
         </h1>
-        <p className=" text-fontSizeParagraph text-paragraphColor">
+        <p className="text-fontSizeMobileParagraph text-paragraphColor lg:text-fontSizeMiniHeader">
           Where creativity meets collaboration: Inspiring design through shared
           passion and innovation.
         </p>
       </div>
-      <div className="my-5 grid grid-col-3 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+      <div className="grid-col-3 my-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {cardsData.map((card) => (
-          <div
+          <motion.div
             key={card.id}
-            className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-span-1 w-full mx-auto"
+            className="col-span-1 mx-auto w-full max-w-sm rounded-lg border border-gray-200 shadow dark:border-gray-700 dark:bg-gray-800"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <a href="#">
-              <img className="rounded-t-lg" src={card.img} alt />
+              <img className="rounded-t-lg" src={card.img} />
             </a>
-            <div className="p-5 space-y-4">
-              <div className=" flex gap-3 mb-2">
-                <span className=" text-fontSizeLable text-lableFontColor bg-lableColor w-fit px-2 py-1 rounded">
+            <div className="space-y-4 p-5">
+              <div className="mb-2 flex gap-3">
+                <span className="w-fit rounded bg-lableColor px-2 py-1 text-fontSizeLable text-lableFontColor">
                   Development
                 </span>
-                <span className=" text-lableColor text-fontSizeLable">
+                <span className="text-fontSizeLable text-lableColor">
                   2 Apr. 2023
                 </span>
               </div>
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-cardHeaderColor font-header_style">
+                <h5 className="mb-2 font-header_style text-2xl font-bold tracking-tight text-cardHeaderColor">
                   {card.title}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-fontSizeParagraph text-paragraphColor">
+              <p className="mb-3 text-fontSizeMobileParagraph font-normal text-paragraphColor lg:text-fontSizeParagraph">
                 {card.description}
               </p>
               <a
                 href="#"
-                className=" text-fontSizeParagraph text-paragraphColor inline-flex gap-3 items-center justify-center hover:text-HLHeaderColor"
+                className="inline-flex items-center justify-center gap-3 text-fontSizeMobileParagraph text-paragraphColor hover:text-HLHeaderColor lg:text-fontSizeParagraph"
               >
                 Read more
                 <ArrowRight />
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
