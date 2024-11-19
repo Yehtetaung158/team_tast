@@ -1,6 +1,6 @@
 import React from "react";
-import BlogHeorSection from "../components/BlogHeorSection";
 import BlogCardSection from "../components/BlogCardSection";
+import BlogHeorSection from "../components/BlogHeorSection";
 import BlogRatinSection from "../components/BlogRatinSection";
 import MailSection from "../components/MailSection";
 
