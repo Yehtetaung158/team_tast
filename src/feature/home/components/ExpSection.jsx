@@ -56,9 +56,9 @@ const ExpSection = () => {
         </div>
       </div>
       
-      <div className="lg:flex gap-5 mt-10">
+      <div className="lg:flex gap-5 mt-10 group">
         {Users.map((user) => (
-          <ExpCard key={user.id} user={user} />
+          <ExpCard key={user.id} user={user}  />
         ))}
       </div>
       <div className="mt-5">
