@@ -1,13 +1,15 @@
 import React from "react";
 import Avatar from "react-avatar";
 import { AiOutlineVideoCamera } from "react-icons/ai";
+import TeamMissonPage from "./TeamMissonPage";
+import profileImg from "../../../assets/profile.jpeg";
 
 const AboutPage = () => {
   return (
     <div>
       <section className="relative bg-gray-100 min-h-screen py-16">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-b from-purple-300 to-purple-400 rounded-br-full"></div>
-        <div className="absolute bottom-0 right-0 w-1/3 h-2/3 bg-blue-200 rounded-tl-full"></div>
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-blue-500 via-purple-500 to-gray-00 py-12 absolute inset-100 rounded-br-full"></div>
+        <div className="absolute bottom-0 right-0 w-1/3 h-2/3 bg-blue-100 rounded-tl-full"></div>
 
         <div className="relative container mx-auto px-6 lg:px-16">
           <div className="text-center mb-12 ">
@@ -19,97 +21,100 @@ const AboutPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
-              <div className="relative w-full h-32 bg-gradient-to-tr from-blue-400 to-purple-500 rounded-lg">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member 1"
-                  className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white"
-                />
-              </div>
+            <div className="bg-gray top-0 shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
+              <Avatar
+                src={profileImg}
+                size="150"
+                round={true}
+                color="#E9F791"
+              />
+
               <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-3xl font-semibold text-gray-800">
                   David Sang
                 </h3>
-                <p className="text-gray-600">Project Lead</p>
-                <p className="mt-4 text-gray-500 text-sm">
+                <p className="text-gray-600">FrontEnd Developer</p>
+                <p className="mt-4 text-gray-900 text-sm">
                   Passionate about creating seamless and dynamic user
                   experiences.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
-              <div className="relative w-full h-32 bg-gradient-to-tr from-green-400 to-blue-500 rounded-lg">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member 2"
-                  className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white"
-                />
-              </div>
+            <div className="bg-gray top-0 shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
+              <Avatar
+                src={profileImg}
+                size="150"
+                round={true}
+                color="#E9F791"
+              />
               <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-3xl font-semibold text-gray-800">
                   Ye Htet Aung
                 </h3>
-                <p className="text-gray-600">Project Manager</p>
-                <p className="mt-4 text-gray-500 text-sm">
-                  Expert in building scalable and efficient software solutions.
+                <p className="text-gray-600">FrontEnd Developer</p>
+                <p className="mt-4 text-gray-900 text-sm">
+                  Focused on crafting engaging applications that empower users
+                  to achieve more.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
-              <div className="relative w-full h-32 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-lg">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member 3"
-                  className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white"
-                />
-              </div>
+            <div className="bg-gray top-0 shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
+              <Avatar
+                src={profileImg}
+                size="150"
+                round={true}
+                color="#E9F791"
+              />
               <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">Zett</h3>
-                <p className="text-gray-600">Project Developer</p>
-                <p className="mt-4 text-gray-500 text-sm">
-                  Crafting intuitive and aesthetically pleasing user interfaces.
+                <h3 className="text-3xl font-semibold text-gray-800">Zett</h3>
+                <p className="text-gray-600">FrontEnd Developer</p>
+                <p className="mt-4 text-gray-900 text-sm">
+                  Driven by a commitment to innovation and delivering impactful
+                  digital solutions.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
-              <div className="relative w-full h-32 bg-gradient-to-tr from-red-400 to-purple-500 rounded-lg">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member 4"
-                  className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white"
-                />
-              </div>
+            <div className="bg-gray top-0 shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
+              <Avatar
+                src={profileImg}
+                size="150"
+                round={true}
+                color="#E9F791"
+              />
               <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">Hannah</h3>
-                <p className="text-gray-600">Project Developer</p>
-                <p className="mt-4 text-gray-500 text-sm">
-                  Keeping projects on track and delivering success on time.
+                <h3 className="text-3xl font-semibold text-gray-800">Hannah</h3>
+                <p className="text-gray-600">FrontEnd Developer</p>
+                <p className="mt-4 text-gray-900 text-sm">
+                  Passionate about designing clean, functional, and
+                  aesthetically pleasing digital experiences.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
-              <div className="relative w-full h-32 bg-gradient-to-tr from-purple-500 to-blue-600 rounded-lg">
-                <img
-                  src=" https://via.placeholder.com/150"
-                  alt="Team Member 5"
-                  className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white"
-                />
-              </div>
+            <div className="bg-gray top-0 shadow-lg rounded-2xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition">
+              <Avatar
+                src={profileImg}
+                size="150"
+                round={true}
+                color="#E9F791"
+              />
               <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">Keo Tan</h3>
-                <p className="text-gray-600">Project Developer</p>
-                <p className="mt-4 text-gray-500 text-sm">
-                  Ensuring quality and excellence in every deliverable.
+                <h3 className="text-3xl font-semibold text-gray-800">
+                  Keo Tan
+                </h3>
+                <p className="text-gray-600">FrontEnd Developer</p>
+                <p className="mt-4 text-gray-900 text-sm">
+                  Committed to continuously refining processes to enhance
+                  usability and performance across platforms.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <TeamMissonPage />
       </section>
     </div>
   );
