@@ -8,57 +8,62 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6">
-      {accordionData.map((item, index) => (
-        <div
-          key={index}
-          id={`accordion-flush-${index}`}
-          className="border border-gray-200 dark:border-gray-700 rounded-lg px-5 py-1 w-full"
-        >
-          <h2 id={`accordion-flush-heading-${index}`}>
-            <button
-              type="button"
-              onClick={() => toggleAccordion(index)}
-              className="flex items-center justify-between w-full py-3 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
-              aria-expanded={activeAccordion === index}
-              aria-controls={`accordion-flush-body-${index}`}
-            >
-              <span className="text-lg font-bold">{item.title}</span>
-              <svg
-                data-accordion-icon
-                className={`w-3 h-3 shrink-0 transform ${
-                  activeAccordion === index ? "rotate-180" : ""
-                }`}
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-
+    <section class="max-w-full mx-auto p-8 w-[70%] mb-20">
+      <h1 class="text-4xl font-bold text-header mb-12 text-center">
+        Frequently Asked Questions
+      </h1>
+      <div className="flex flex-col gap-6">
+        {accordionData.map((item, index) => (
           <div
-            id={`accordion-flush-body-${index}`}
-            className={`${
-              activeAccordion === index ? "block" : "hidden"
-            } py-3 px-2`}
-            aria-labelledby={`accordion-flush-heading-${index}`}
+            key={index}
+            id={`accordion-flush-${index}`}
+            className="border border-gray-200 dark:border-gray-700 rounded-lg px-5 py-1 w-full"
           >
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
-              {item.content}
-            </p>
+            <h2 id={`accordion-flush-heading-${index}`}>
+              <button
+                type="button"
+                onClick={() => toggleAccordion(index)}
+                className="flex items-center justify-between w-full py-3 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+                aria-expanded={activeAccordion === index}
+                aria-controls={`accordion-flush-body-${index}`}
+              >
+                <span className="text-fontSizeParagraph  ">{item.title}</span>
+                <svg
+                  data-accordion-icon
+                  className={`w-3 h-3 shrink-0 transform ${
+                    activeAccordion === index ? "rotate-180" : ""
+                  }`}
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id={`accordion-flush-body-${index}`}
+              className={`${
+                activeAccordion === index ? "block" : "hidden"
+              } py-3 px-2`}
+              aria-labelledby={`accordion-flush-heading-${index}`}
+            >
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                {item.content}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

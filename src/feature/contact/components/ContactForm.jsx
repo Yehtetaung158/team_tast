@@ -1,12 +1,14 @@
 import React from "react";
 
-const ContactForm = () => {
+const ContactForm = ({ Profile }) => {
   return (
-    <form className="max-w-sm mx-auto flex flex-col h-full">
+    <form className="w-full px-8 flex flex-col h-full">
       <div className="mb-5">
         <h1 className="mb-3 text-header font-bold">Get In Touch</h1>
         <p className="text-subHeader">Our team would love to hear from you.</p>
       </div>
+
+      {/* Name Fields */}
       <div className="mb-5 flex space-x-4">
         <div className="w-full">
           <label
@@ -41,6 +43,7 @@ const ContactForm = () => {
         </div>
       </div>
 
+      {/* Email Field */}
       <div className="mb-5">
         <label
           htmlFor="email"
@@ -57,6 +60,7 @@ const ContactForm = () => {
         />
       </div>
 
+      {/* Message Field */}
       <label
         htmlFor="message"
         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -65,15 +69,17 @@ const ContactForm = () => {
       </label>
       <textarea
         id="message"
-        rows="4"
+        rows="6"
         className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Write your message"
+        required
       ></textarea>
 
-      {/* Button placed at the bottom after the text area */}
+      {/* Submit Button */}
+
       <button
         type="button"
-        className="text-white mt-4 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mx-auto mb-4 dark:focus:ring-yellow-900"
+        className="text-white text-md mt-auto bg-greenShades-40 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full  px-5 py-2.5 text-center mx-auto mb-4 dark:focus:ring-yellow-900"
       >
         Submit Now
       </button>
