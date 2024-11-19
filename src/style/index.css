@@ -1,11 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.active{
+.homebg {
+  background: rgb(255, 239, 151);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 239, 151, 0.46271008403361347) 11%,
+    rgba(249, 251, 248, 1) 32%,
+    rgba(249, 251, 248, 1) 67%,
+    rgba(255, 239, 151, 0.4318977591036415) 90%
+  );
+}
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.active {
   /* text-decoration: underline; */
-  color: #494B46;
+  color: #494b46;
   font-weight: bold;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
 }
