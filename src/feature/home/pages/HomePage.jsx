@@ -5,6 +5,7 @@ import MasterSection from '../components/MasterSection'
 import InnoSection from '../components/InnoSection'
 import BlogSection from '../components/BlogSection'
 import ReviewSection from '../components/ReviewSection'
+import MailSection from '../components/MailSection'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <InnoSection/>
         <BlogSection/>
         <ReviewSection/>
+        <MailSection/>
 
     </>
     
