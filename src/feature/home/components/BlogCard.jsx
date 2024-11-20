@@ -3,7 +3,7 @@ import React from 'react'
 
 const BlogCard = ({ blog : { id , title , content , img , catergory , href , date}}) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 p-2 border border-[#858585B2] shadow-lg rounded-lg '>
+    <div className='flex flex-col items-center justify-center gap-4 p-2 border border-[#858585B2] shadow-lg rounded-lg hover:shadow-2xl transition-all ease-in-out duration-150 delay-75 '>
         <div>
             <img src={img} alt="" className='' />
         </div>
