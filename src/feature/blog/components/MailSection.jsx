@@ -1,9 +1,22 @@
 import React from "react";
 import {motion} from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 const MailSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.2, 
+  });
   return (
-    <section className=" flex flex-col items-center justify-center my-10">
+    <motion.section 
+    ref={ref}
+    initial={{ opacity: 0 }}
+    animate={{
+      opacity: inView ? 1 : 0,
+      scale: inView ? 1 : 0.8,
+    }}
+    transition={{ duration: 0.7 }}
+    className=" flex flex-col items-center justify-center my-10">
       <div className=" flex items-center justify-around gap-12 w-full py-6">
         <div className=" flex flex-col ">
           <h1 className=" lg:text-[40px] text-[20px] font-semibold">5M+</h1>
@@ -42,7 +55,7 @@ const MailSection = () => {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

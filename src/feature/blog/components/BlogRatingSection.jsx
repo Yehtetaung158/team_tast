@@ -1,8 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const BlogRatingSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.2, 
+  });
   return (
-    <section>
+    <motion.section
+    ref={ref}
+       initial={{ opacity: 0 }}
+       animate={{
+         opacity: inView ? 1 : 0,
+         scale: inView ? 1 : 0.8,
+       }}
+       transition={{ duration: 0.7 }}
+    >
       <div>
         <h1 className="text-center font-header_style text-fontSizeMobileHeader font-bold text-headerColor lg:text-fontSizeHeader">
           Over 16.000 + companies{" "}
@@ -10,7 +23,8 @@ const BlogRatingSection = () => {
           they are optimistic that they will be the best in the world.
         </h1>
       </div>
-      <div className="mt-10 grid grid-cols-1 gap-4 px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div 
+      className="mt-10 grid grid-cols-1 gap-4 px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <motion.div
           whileHover={{
             scale: 1.05,
@@ -108,7 +122,7 @@ const BlogRatingSection = () => {
           </h1>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
