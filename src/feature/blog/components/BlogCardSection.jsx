@@ -8,8 +8,13 @@ import card5Img from "../../../assets/BlogImg/Wreframeplaceholder.png";
 import card6Img from "../../../assets/BlogImg/Switch(1).png";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const BlogCardSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.2, // Trigger when 20% of the element is in view
+  });
   const cardsData = [
     {
       id: 1,
@@ -68,7 +73,16 @@ const BlogCardSection = () => {
           passion and innovation.
         </p>
       </div>
-      <div className="grid-col-3 my-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: inView ? 1 : 0,
+          scale: inView ? 1 : 0.8,
+        }}
+        transition={{ duration: 0.7 }}
+        className="grid-col-3 my-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4"
+      >
         {cardsData.map((card) => (
           <motion.div
             key={card.id}
@@ -77,7 +91,12 @@ const BlogCardSection = () => {
               scale: 1.05,
               boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
             }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+              duration: 0.5,
+            }}
           >
             <a href="#">
               <img className="rounded-t-lg" src={card.img} />
@@ -109,7 +128,7 @@ const BlogCardSection = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
