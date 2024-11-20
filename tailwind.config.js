@@ -63,8 +63,11 @@ export default {
       },
       fontSize: {
         fontSizeHeader: '64px',
+        fontSizeMobileHeader: '40px',
         fontSizeMiniHeader: '22px',
+        fontSizeMobileMiniHeader: '18px',
         fontSizeParagraph: '20px',
+        fontSizeMobileParagraph: '16px',
         fontSizeLable: '14px',
       },
     },
