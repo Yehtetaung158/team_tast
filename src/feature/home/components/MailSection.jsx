@@ -3,7 +3,7 @@ import React from "react";
 const MailSection = () => {
   return (
     <div className="lg:p-32">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:border rounded-lg shadow-lg bg-[#F9FBF8B2]items-center p-16 space-y-10 hover:shadow-2xl transition-all ease-in-out duration-150 delay-75">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:border rounded-lg lg:shadow-lg bg-[#F9FBF8B2]items-center p-16 space-y-10 hover:shadow-2xl transition-all ease-in-out duration-150 delay-75">
         
         <div>
           <h5 className=" font-miniHeader_style text-fontSizeParagraph text-paragraphColor">Seamless Interaction</h5>

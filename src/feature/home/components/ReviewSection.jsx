@@ -6,7 +6,7 @@ import img3 from "../../../assets/HomeIMG/Icon.png"
 
 const ReviewSection = () => {
   return (
-    <div className='grid grid-cols-1  lg:grid-cols-3 pt-20'>
+    <div className='grid grid-cols-1  lg:grid-cols-3 pt-32'>
         <div className='flex flex-col items-center justify-center gap-5 p-5'>
             <div>
                 <img src={img1} alt="" />
