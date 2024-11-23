@@ -1,5 +1,5 @@
 import React from "react";
-// import lines from "../../../assets/HomeIMG/lines.png";
+import lines from "../../../assets/HomeIMG/lines.png";
 
 const MasterSection = () => {
   const topics = [
@@ -49,7 +49,7 @@ const MasterSection = () => {
       </div>
       <div className="lg:flex items-center justify-center  bg-[#f9fbf8b2] mt-10 space-y-10 ">
         <div className="w-fit mx-auto">
-        <img src={require("../../../assets/HomeIMG/lines.png")} alt="" />
+        <img src={lines} alt="" />
 
         </div>
 
